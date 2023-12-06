@@ -1,0 +1,83 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Happy+Monkey&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+    <!-- Assuming the HTML file and favicon.ico are in the same directory -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>MERGED</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="about.html" class="about-link">About Us</a></li>
+        <!-- Add other navigation links as needed -->
+      </ul>
+    </nav>
+    <img src="Be.png" alt="Top Left Image" class="top-left-image" />
+
+    <div class="container">
+      <h1 class="merged-title">MERGED</h1>
+      <h2 class="mpg">Music Playlist Generator</h2>
+
+      <!-- Login form -->
+      <div id="login-form" style="display: block">
+        <h2>LOGIN</h2>
+        <form id="usn">
+          <label for="username">Username:</label>
+          <input type="text" id="username" required />
+        </form>
+        <form id="pass">
+          <label for="password">Password:</label>
+          <input type="password" id="password" required />
+        </form>
+        <button type="button" onclick="login()">Login</button>
+      </div>
+
+      <!-- Playlist generator section -->
+      <div id="playlist-generator" style="display: none">
+        <div id="preferences">
+          <label for="mood">Select Mood:</label>
+          <select id="mood" onchange="updateArtistDropdown()">
+            <option value="happy">Happy</option>
+            <option value="sad">Sad</option>
+            <option value="energetic">Energetic</option>
+
+            <!-- Add more mood options as needed -->
+          </select>
+
+          <label for="artist">Favorite Artist:</label>
+          <select id="artist">
+            <!-- Artist options will be dynamically populated based on mood -->
+          </select>
+
+          <button onclick="generatePlaylist()">Generate Playlist</button>
+        </div>
+
+        <div id="playlist-link"></div>
+        <div id="playlist-container"></div>
+        <!-- Playlist link will be displayed here -->
+      </div>
+    </div>
+    <script>
+      // Trigger updateArtistDropdown on page load
+      document.addEventListener("DOMContentLoaded", function () {
+        updateArtistDropdown();
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

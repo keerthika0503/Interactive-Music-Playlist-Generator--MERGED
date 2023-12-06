@@ -1,0 +1,176 @@
+/* styles.css */
+body {
+  font-family: "Happy Monkey", sans-serif;
+  background: url("https://c4.wallpaperflare.com/wallpaper/371/946/336/blur-classic-close-up-equipment-wallpaper-preview.jpg")
+    center center/cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 700px;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+}
+.about-link {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 20px; /* Adjust this value to position it vertically */
+  right: 80px; /* Adjust this value to position it horizontally */
+}
+#about-us-link {
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  background-color: #e6e8ed;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#about-us{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 2px;
+
+ 
+}
+.merged-title {
+    font-size: 100px; /* Adjust the font size as needed */
+    margin-top: 50px; /* Adjust as needed to move it higher */
+  }
+.mpg {
+    padding-bottom: 40px; /* Adjust the font size as needed */
+    margin-top: -75px;
+    letter-spacing: 2px;
+     /* Adjust as needed to move it higher */
+  }
+#login-form{
+  font-size: 35px;
+}
+
+h1,
+h2 {
+  color: #fcf7f7;
+}
+
+#usn,#pass{
+  padding-right: 55px;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+#playlist-generator {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center form elements horizontally */
+}
+
+  
+
+
+label {
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #f9f5f5;
+}
+
+input {
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  background: rgb(243, 78, 60);
+  color: #fff;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: orangered;
+}
+/* ... (existing styles) */
+
+/* Complex styles for dropdown menu */
+select {
+  padding: 13px; /* Adjust the padding to increase or decrease the box size */
+  height: 50px; /* Adjust the height to increase or decrease the box size */
+  margin-bottom: 20px;
+  border: 2px solid #0c0c0c;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #0f0f0f;
+  background-color: #fff;
+  position: relative;
+  appearance: none;
+}
+
+/* ... (rest of the CSS code) */
+
+#playlist-container {
+  position: fixed;
+  margin-top: 30px;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.playlist-link {
+  position: fixed;
+  display: inline-block;
+  padding: 12px 24px;
+  background: #3498db;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.playlist-link:hover {
+  background: #2980b9;
+}
+
+.playlist-image {
+  position: fixed;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+/* Add this style for the top-left image */
+.top-left-image {
+  padding: 30px;
+  position: absolute;
+  top: 0;
+  left: 49.20%;
+  transform: translateX(-50%);
+  max-width: 100px; /* Adjust the max-width as needed */
+  max-height: 100px; /* Adjust the max-height as needed */
+  margin: 20px; /* Adjust the margin as needed */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
